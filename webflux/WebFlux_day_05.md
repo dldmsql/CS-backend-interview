@@ -320,3 +320,6 @@ reactive programming으로 구현하기 위해 return type을 Mono wrapper로 �
 아래 사진은 **PUT** 요청을 테스트하는 모습이다. PUT/PATCH 요청에 대해 api가 원활하게 동작하지 않아 이 부분은 수정해 나갈 예정이다.
 
 ![image](https://user-images.githubusercontent.com/61505572/175776280-681c9a5d-ff25-4c4b-ae27-7efab90c99ff.png)
+
+
+참고 자료 [여기](https://jstobigdata.com/spring/spring-webflux-rest-api-with-mongodb-and-spring-data/) | [여기](https://www.knowledgefactory.net/2021/09/building-reactive-crud-apis-using-webflux-r2dbc-example.html)
