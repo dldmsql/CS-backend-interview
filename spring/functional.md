@@ -8,8 +8,8 @@
 
 1. What is Lambda Expression
 Stream 연산들은 매개변수로 함수형 인터페이스를 받도록 되어있다. 그리고 Lambda Expression은 반환값으로 함수형 인터페이스를 반환하고 있다.
-> Stream은 JAVA 8에서 추가된 것으로, Lambda를 활용할 수 있는 기술 중 하나이다. 
-> Stream은 데이터의 흐름으로, 배열 또는 컬렉션 인스턴스에 함수 여러 개를 조합해서 원하는 결과를 얻을 수 있다.
+> Stream은 JAVA 8에서 추가된 것으로, Lambda를 활용할 수 있는 기술 중 하나이다. <br/>
+> Stream은 데이터의 흐름으로, 배열 또는 컬렉션 인스턴스에 함수 여러 개를 조합해서 원하는 결과를 얻을 수 있다.<br/>
 > Strema은 병렬 처리가 가능하다. 하나의 작업을 둘 이상의 작업으로 잘게 나눠서 동시에 진행하는 것을 병렬 처리라 하는데, Thread를 이용해 많은 요소들을 빠르게 처리할 수 있다.
 
 Lambda Expression은 함수를 하나의 식(Expression)으로 표현한 것을 말한다. 함수를 람다식으로 표현하면 메소드의 이름이 필요 없기 때문에, 람다식은 익명 함수의 한 종류라고 볼 수 있다.
@@ -27,13 +27,13 @@ Lambda Expression은 함수를 하나의 식(Expression)으로 표현한 것을 
 
 2. What is Functional Interface 
 Java는 기본적으로 객체지향 언어이기 때문에 람다식으로 정의하는 순수 함수와 그렇지 않은 일반 함수를 다르게 취급한다. 이 둘을 구분하기 위해 등장한 것이 함수형 인터페이스이다.
-> 순수함수란?
-> 동일한 입력에 대해 항상 동일한 출력을 반환하는 함수를 말한다.
+> 순수함수란?<br/>
+> 동일한 입력에 대해 항상 동일한 출력을 반환하는 함수를 말한다.<br/>
 > 외부의 상태를 변경하거나 영향을 받지 않는 함수를 말한다.
 
 함수형 인터페이스란 함수를 1급 객체처럼 다룰 수 있게 해주는 어노테이션으로, 인터페이스에 선언하여 단 하나의 추상 메소드만을 갖도록 제한하는 역할을 한다. 
-> 1급 객체란?
-> First-class Object는 변수에 할당할 수 있으며, 다른 함수를 인자로 전달 받고, 다른 함수의 결과로서 리턴될 수 있다.
+> 1급 객체란?<br/>
+> First-class Object는 변수에 할당할 수 있으며, 다른 함수를 인자로 전달 받고, 다른 함수의 결과로서 리턴될 수 있다.<br/>
 > JS에서 const a = fun (num) { return num * num ;}을 떠올리자
 
 Java에서 제공하는 함수형 인터페이스 4개는 다음과 같다.
@@ -74,8 +74,8 @@ false
 ````
 이 인터페이스는 그루터기 코드에서도 사용한 적이 있다.
 
-[망나니개발자](https://mangkyu.tistory.com/113)
-[Stream 정리 잘되어 있는 블로그](https://futurecreator.github.io/2018/08/26/java-8-streams/)
+[망나니개발자](https://mangkyu.tistory.com/113)<br/>
+[Stream 정리 잘되어 있는 블로그](https://futurecreator.github.io/2018/08/26/java-8-streams/)<br/>
 [1급 객체가 무엇인가](https://velog.io/@reveloper-1311/%EC%9D%BC%EA%B8%89-%EA%B0%9D%EC%B2%B4First-Class-Object%EB%9E%80)
 
 3. What is JVM
@@ -90,7 +90,7 @@ JVM은 Garbage Collector, Execution Engine, Class Loader, Runtime Data Area로 �
 1. 자바 소스 파일을 자바 컴파일러가 Class 파일로 변환한다.
 2. Class Loader가 Class 파일을 읽어들이면서 링크를 통해 배치하는 작업을 수행한다. ( 런타임 시에 동적으로 클래스를 로드한다. )
 3. Execution Engine은 Class Loader를 통해 JVM 내의 Runtime Data Area에 배치된 바이트 코드들을 명령어 단위로 읽어서 실행한다. ( JVM은 모든 코드를 JIT 컴파일러 방식으로 실행하지 않고, 인터프리터 방식을 사용하다가 일정한 기준이 넘어감녀 JIT 컴파일러 방식으로 실행한다. )
-> JIT 컴파일러 방식 : 바이트 코드를 어셈블리어 같은 네이티브 코드로 바꿈으로써 실행이 빠르다.
+> JIT 컴파일러 방식 : 바이트 코드를 어셈블리어 같은 네이티브 코드로 바꿈으로써 실행이 빠르다.<br/>
 > 인터프리터 방식 : 읽고 해석하고 실행한다.
 4. Garbage Collector는 Heap 메모리 영역에 생성된 객체들 중에서 참조되지 않은 객체들을 탐색 후 제거하는 역할을 한다. 
 5. Runtime Data Area는 JVM의 메모리 영역으로 자바 애플리케이션을 실행할 때 사용되는 데이터들을 적재하는 영역이다. Method, Heap, Stack, PC Register, Native Method Stack으로 나눌 수 있다.
@@ -117,7 +117,8 @@ Thread가 시작될 때 생성되며, 생성될 때마다 함께 생성되는 �
 
 **왜 그럴까??** <br/>
 지역변수는 JVM의 Runtime Data Area 중에서도 Stack 영역에 저장되어 있다. 람다는 이 지역변수를 Stack 영역에 직접 접근 하는 것이 아니라 지역변수를 자신의 Stack 영역에 복사하여 사용한다.
-> 람다식이 동작하고 있는 Thread는 자신만의 Stack영역을 갖는다.
+> 람다식이 동작하고 있는 Thread는 자신만의 Stack영역을 갖는다.<br/>
+
 때문에 지역변수가 존재하는 Thread가 사라져도 람다는 복사된 값을 참조하기에 에러가 발생하지 않는다. ( 원본이 사라져도 복사한 값을 참조해서 걱정이 없다! )
 
 만약, 멀티 쓰레드 환경에서 여러 개의 쓰레드가 동일한 람다식을 사용한다고 가정해보자. 여러 개의 쓰레드가 람다 캡처링을 하는데, 자유 변수의 값이 계속해서 변한다면 동기화 문제가 발생하게 된다. 때문에 자유변수로 지역변수를 택할 경우, 그 변수는 final 속성을 지녀야 한다.
@@ -134,7 +135,7 @@ Thread가 시작될 때 생성되며, 생성될 때마다 함께 생성되는 �
 함수형 프로그래밍의 특징으로는 1) 순수함수, 2) Stateless, Immutability, 3) 선언형 함수, 4) 일급 객체와 고차함수가 있다.
 
 앞서 설명한 순수함수는 프로그램의 변화 없이 입력 값에 대한 결과를 예상할 수 있어 테스트가 용이하다.
-> fun add(a,b) { return a+b; }
+> fun add(a,b) { return a+b; }<br/>
 > 함수는 입력과 그에 따른 출력이 있을 뿐이다.
 
 Stateless, Immutability는 데이터의 상태가 변하지 않는 불변성을 유지해야 한다는 특성이다. 그 이유에 대해서는 위에서 JVM을 통해 설명했다.
@@ -154,6 +155,6 @@ Stateless, Immutability는 데이터의 상태가 변하지 않는 불변성을 
 하지만, 함수형 프로그래밍에서는 사용하는 모든 데이터가 변경 불가능하고 side-effect가 없다. 때문에, 여러 쓰레드가 동시에 공유 데이터에 접근하더라도 해당 데이터가 변경될 수 없기 때문에 동시성과 관련된 문제를 원천적으로 봉쇄한다.
 
 
-[대강 flow 이해하기 좋음](https://tecoble.techcourse.co.kr/post/2021-09-30-java8-functional-programming/)
-[여기도 자료가 좋음](https://jongminfire.dev/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4%EB%9E%80)
+[대강 flow 이해하기 좋음](https://tecoble.techcourse.co.kr/post/2021-09-30-java8-functional-programming/)<br/>
+[여기도 자료가 좋음](https://jongminfire.dev/%ED%95%A8%EC%88%98%ED%98%95-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4%EB%9E%80)<br/>
 [함수형프로그래밍 깔끔 자료](http://ruaa.me/why-functional-matters/)
