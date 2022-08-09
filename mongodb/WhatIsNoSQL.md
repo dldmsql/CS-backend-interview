@@ -9,6 +9,7 @@ NoSQL이란 ?
 
 <br/>
 SQL vs. NoSQL
+
 |SQL(MySQL)|NoSQL(MongoDB)|
 |------|---|
 |규칙에 맞는 데이터를 입력|자유로운 데이터 입력 가능|
