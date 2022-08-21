@@ -1,4 +1,4 @@
- # Threa-safe
+ # Thread-safe
 
  # 1.Process vs. Thread
  ## Process
@@ -88,8 +88,6 @@ multi-thread 프로그래밍에서 일반적으로 어떤 함수나 변수 혹�
 
 어떤 프로세스가 조작을 하고 있다고 가정하자. 그러면 다른 프로세스 즉, 외부에서는 조작의 성공과 실패만을 확인할 수 있다. 그 과정을 알지 못한다. 이것을 automic operation이라고 한다.
 
-![Untitled](https://vaert.tistory.com/39)
-
 5. Immutable Object
 객체를 생성한 이후에 값을 변경할 수 없도록 만든다.
 예를 들면, 자바에서는 private final을 사용한다.
@@ -106,9 +104,8 @@ multi-thread 프로그래밍에서 일반적으로 어떤 함수나 변수 혹�
 공유 자원의 데이터 혹은 cirtical section (임계영역)에 1개의 프로세스 혹은 쓰레드가 접근하는 것을 막아준다.<br/>
 critical section을 가진 쓰레드들의 running time이 서로 겹치지 않게 각각 단독으로 실행되게 하는 기술이다. 즉, 2개의 쓰레드가 뮤텍스 객체를 동시에 사용할 수 없다. <br/>
 
-=>> 세마포어는 뮤텍스가 될 수 있다. 하지만! 뮤텍스는 세마포어가 될 수 없다.<br/>
+> 세마포어는 뮤텍스가 될 수 있다.<br/> 하지만! 뮤텍스는 세마포어가 될 수 없다.<br/>
 
 * critical section (임계영역)
 여러 프로세스가 데이터를 공유하며 작업을 할 때, 각 프로세스에서 공유 데이터에 접근하는 프로그램의 코드 부분을 가리킨다.
 
-![Untitled](https://jwprogramming.tistory.com/13)
