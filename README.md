@@ -1,10 +1,3 @@
-# Introduce
+# 가끔 생각나면 기록하는 공간
 
-Hello, this repository aims to organize to remember while studying development.My major is backend part, and I plan to organize spring, java, network, os, and db.
-
-If there is anything wrong, please leave it as a pull requests or issue and i will correct it quickly.
-
-Thank you for visiting. 😊
-
-@Author : dldmsql
-@StartDate : 2022.03 ~ 
+노션과 깃헙 양쪽에서 기록 중이라, 업데이트가 늦어질 수 있습니다.
